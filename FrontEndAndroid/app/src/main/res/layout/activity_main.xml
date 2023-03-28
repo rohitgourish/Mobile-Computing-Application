@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- add Camera Button to open the Camera -->
+
+    <!-- add ImageView to display the captured image -->
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="135dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="152dp"
+        android:text="Camera" />
+
+    <ImageView
+        android:id="@+id/click_image"
+        android:layout_width="wrap_content"
+        android:layout_height="374dp"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/camera_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="-94dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="144dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="114dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/click_image" />
+</RelativeLayout>
+
